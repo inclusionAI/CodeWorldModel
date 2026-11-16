@@ -1,0 +1,58 @@
+.gitignore
+  h_ddb8d5b3643287 90-93
+README.md
+  h_ddb8d5b3643287 2,5,8,12-13,16-19,21-29,31-38,40,42,44,46,48-52,54,56-61,63-67,69,71,73-79,81,83,85,88-89,92,98,106,108-110,112,115,124-126,128-137,147-148,151,153-154,157,159,161-168,170,172,174
+README.zh-CN.md
+  h_ddb8d5b3643287 1-3,5,8,11-14,17-18,21-29,32-37,40,42,44,46,48-52,54,56-61,63-67,69,71,73-79,81,85,88-89,92,98,106,108-110,112,115,124-135,137,139,147-148,151,153-154,157,159,161-168,172,174
+THIRD_PARTY_NOTICES.md
+  h_ddb8d5b3643287 1,14-15,24
+assets/badges/demo-video.svg
+  h_ddb8d5b3643287 1-13
+assets/badges/docs.svg
+  h_ddb8d5b3643287 1-17
+assets/badges/homepage.svg
+  h_ddb8d5b3643287 1-17
+assets/badges/hugging-face.svg
+  h_ddb8d5b3643287 1-17
+assets/badges/tech-report.svg
+  h_ddb8d5b3643287 1-17
+assets/demo/metadata.json
+  h_ddb8d5b3643287 2-46
+docs/INFERENCE.md
+  h_ddb8d5b3643287 1,3,5,11,15-24,27,29-30,38,85,97,107,122,126
+invoker_render.py
+  h_ddb8d5b3643287 1-50
+src/sglang/projects/minimax_h3/README-project.md
+  h_ddb8d5b3643287 1,3,5,15,19,21-25,27,29,31-33
+src/sglang/projects/minimax_h3/README.md
+  h_ddb8d5b3643287 1,3,5,12
+src/sglang/projects/minimax_h3/README_inference.md
+  h_ddb8d5b3643287 1
+src/sglang/projects/minimax_h3/tests/test_omni_h3_client.py
+  h_ddb8d5b3643287 332,342,344,356
+src/sglang/projects/minimax_h3/tests/test_raven_runtime.py
+  h_ddb8d5b3643287 67
+src/sglang/projects/minimax_h3/tests/test_raw_gloo.py
+  h_ddb8d5b3643287 65
+src/sglang/projects/minimax_h3/tests/test_serving_gloo.py
+  h_ddb8d5b3643287 107
+src/sglang/projects/minimax_h3/tests/test_serving_text_gloo.py
+  h_ddb8d5b3643287 64
+src/sglang/projects/minimax_h3/tests/test_streaming_text_gloo.py
+  h_ddb8d5b3643287 131,149
+src/sglang/projects/minimax_h3/tools/ray_worker.py
+  h_ddb8d5b3643287 8
+src/sglang/projects/minimax_h3/web/playable/README.md
+  h_ddb8d5b3643287 1,9,24,27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "05903a7982354fc723ac5ca030be5bc5f185a1a7",
+  "prompts": {},
+  "humans": {
+    "h_ddb8d5b3643287": {
+      "author": "haimu.ll <haimu.ll@antgroup.com>"
+    }
+  }
+}
