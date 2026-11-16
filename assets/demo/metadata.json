@@ -1,0 +1,46 @@
+{
+  "racing_preview": {
+    "file": "racing-preview.gif",
+    "dimensions": [
+      560,
+      320
+    ],
+    "frames": 72,
+    "playback_fps": 6,
+    "source": "six 2-second excerpts of a generated racing sequence; the source video is not stored in this repository",
+    "source_dimensions": [
+      1344,
+      768
+    ],
+    "source_excerpt_start_seconds": [
+      0,
+      60,
+      120,
+      180,
+      240,
+      298
+    ],
+    "inference_mode": "reference-guided quality inference",
+    "note": "The burned-in timecode strip was cropped. Playback FPS is not generation throughput."
+  },
+  "interactive_session": {
+    "file": "interactive-session.gif",
+    "dimensions": [
+      400,
+      412
+    ],
+    "frames": 72,
+    "playback_fps": 6,
+    "source": "phone recording of a monitor during a live gamepad-driven session; the recording is not stored in this repository",
+    "source_duration_seconds": 626.9,
+    "source_excerpt_start_seconds": [
+      20,
+      120,
+      200,
+      300,
+      450,
+      600
+    ],
+    "note": "Cropped to the screen and gamepad and silenced. A camera recording of a display, not model output pixels."
+  }
+}

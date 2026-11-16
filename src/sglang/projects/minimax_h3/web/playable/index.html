@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>invoker-render · 游玩与实时回传</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header><div><span class="eyebrow">invoker-render / STREAMING INFERENCE</span><h1>游玩与实时回传</h1></div><span id="mode" class="badge">正在连接服务</span></header>
+  <main>
+    <div class="workspace">
+      <aside class="setup-panel" aria-label="游戏与首帧">
+        <h2>游戏与首帧</h2>
+        <label for="scene">游戏 / 场景</label><select id="scene" disabled><option value="boxing">正在加载…</option></select>
+        <div id="torcs-controls" hidden>
+          <label for="torcs-mode">赛车 Proxy 风格</label><select id="torcs-mode" disabled></select>
+          <label class="check" for="torcs-auto"><input id="torcs-auto" type="checkbox">自动驾驶</label>
+          <small>开始后固定风格；首图取自重置后的同一时刻。</small>
+        </div>
+        <label for="reference">首帧参考图片</label><input id="reference" type="file" accept="image/png,image/jpeg,image/webp" disabled>
+        <small id="reference-info">选择与当前游戏开局对应的图片。</small>
+        <button id="fixture-reference" hidden>用 proxy 生成测试参考图</button>
+        <div class="reference-images"><figure id="reference-preview" hidden><canvas id="reference-preview-image" role="img" aria-label="当前首帧参考图"></canvas><figcaption id="reference-preview-caption"></figcaption></figure></div>
+        <details id="settings-panel" class="session-actions">
+          <summary>会话设置</summary>
+          <label for="seed">随机种子</label><input id="seed" type="number" value="2026" min="0" max="2147483647">
+          <label for="bitrate">目标视频码率 · Mbps</label><input id="bitrate" type="number" value="8" min="0.5" max="20" step="0.5" disabled>
+          <small>编码器的目标码率，开始后固定。</small>
+          <label for="capture-policy">采集策略</label><select id="capture-policy"><option value="continuous">持续观测 · 队列满时等待</option><option value="stress">24 FPS 压力测试 · 超载停止</option></select>
+          <label for="source-budget">总在途帧预算</label><select id="source-budget"><option value="bounded51" selected>最多 51 帧</option><option value="bounded45">最多 45 帧 · 实验对照</option><option value="bounded40">最多 40 帧 · 实验对照</option><option value="off">关闭 · 原采集基线</option></select>
+          <small id="budget-help">等待读取服务能力。</small>
+          <label for="startup-mode">启动方式</label><select id="startup-mode"><option value="baseline">连续采集 · 基线</option><option value="startup_pause" selected>首批追齐 · 完整包后冻结</option></select>
+          <small>追齐时暂停游戏，首批结果显示后恢复。</small>
+          <label for="playback-mode">播放节奏</label><select id="playback-mode"><option value="fixed">固定 24 FPS · 基线</option><option value="adaptive" selected>自适应目标 8–24 FPS</option></select>
+          <small>调整显示节奏，源帧与媒体时间戳保持不变。</small>
+          <label class="check" for="observe-waits"><input id="observe-waits" type="checkbox">记录等待区间</label>
+          <label for="prompt">场景描述</label><textarea id="prompt" rows="3" maxlength="4000" disabled placeholder="当前服务使用固定文本"></textarea>
+          <small id="prompt-info">等待读取服务配置。</small>
+        </details>
+      </aside>
+      <div class="play-panel">
+        <section class="session-bar" aria-label="会话控制">
+          <div class="buttons"><button id="start" class="primary" disabled>开始持续观测</button><button id="finish" disabled>停止并排空</button><button id="cancel" disabled>立即取消</button></div>
+          <p id="status" role="status" aria-live="polite">初始化场景…</p>
+          <p id="startup-status" role="status">首批追齐 · 等待开始</p>
+        </section>
+    <section class="screens" aria-label="实时画面">
+      <article><div class="screen-title"><h2>Proxy · 输入</h2><span id="source-geometry">24 FPS</span></div><canvas id="proxy" tabindex="0" aria-label="可操控的 proxy 场景"></canvas><div id="boxing-hud" class="scene-hud"><span>玩家 <strong id="player-hp">100</strong></span><span id="boxing-state" role="status" aria-live="polite">按 WASD 或 J/K 开始</span><span>对手 <strong id="opponent-hp">100</strong></span></div><div id="racing-hud" class="scene-hud" hidden><span>速度 <strong id="race-speed">0 km/h</strong></span><span id="race-state" role="status" aria-live="polite">按 W 或 ↑ 开始</span><span>已完成 <strong id="race-laps">0 圈</strong></span></div><p id="scene-help">点击画面后按 WASD 移动，J 轻拳，K 重拳，R 重开。</p><button id="reset-game">重开对战</button><button id="source-pause" hidden>继续游戏</button></article>
+      <article><div class="screen-title"><h2 id="output-title">服务输出</h2><span id="output-geometry">等待帧</span></div><div class="output-wrap"><canvas id="output" aria-label="模型返回的画面"></canvas><span id="empty">启动后在这里播放返回画面</span></div><p id="output-info">显示丢帧与输入超载分开记录。没有输出时保留上一帧。</p></article>
+    </section>
+    <p id="metrics-session" class="metrics-heading">尚无会话</p>
+    <section class="metrics" aria-label="实时指标">
+      <div><span>采集 / 接收 / 绘制 FPS</span><strong id="fps">— / — / —</strong><small>最近 5 秒墙钟窗口，独立帧计数；不表示模型产能</small></div>
+      <div><span>目标播放速率</span><strong id="playback-target">—</strong><small>绘制间隔的目标值；上方唯一绘制帧 FPS 是实际结果，二者均不表示模型产能</small></div>
+      <div><span id="visible-age-label">当前可见源画面年龄</span><strong id="visible-age">—</strong><small id="visible-age-info">当前浏览器时间减源帧采集时间；画面不变时继续增长，结束后也继续计时</small></div>
+    </section>
+        <section class="recording-panel" aria-label="同步录像">
+          <label class="check" for="record-session"><input id="record-session" type="checkbox">录制本次会话的同步视频</label>
+          <small>开始前勾选。仅记录实际绘制且两路编码器接收的配对帧；任一路繁忙则整对跳过。Proxy 与生成视频使用相同绘制时间，刷新前请下载。</small>
+          <small>待配对 Proxy 上限 128 MiB；两路编码数据达到 512 MiB 后停止并排空，排空数据与封装可能超出阈值。录像不代表完整模型输出、EMA 数值一致性或推理 FPS。</small>
+          <div class="buttons"><button id="download-proxy-video" disabled>下载 Proxy 视频</button><button id="download-rgb-video" disabled>下载生成视频</button><button id="download-video-timing" disabled>下载录像时间映射</button><button id="download" disabled>下载本次记录 JSON</button></div>
+          <p id="record-status" role="status" aria-live="polite">录像未启用。本机游戏来源暂不支持精确同步录像。</p>
+        </section>
+      </div>
+    </div>
+    <details id="diagnostics" class="diagnostics">
+      <summary>诊断与时间轴 <span id="diagnostics-session">尚无会话</span></summary>
+    <p id="profiling-status" class="badge" role="status" aria-live="polite">等待 profiler 状态</p>
+    <small>开关由模型服务启动配置决定。诊断采集可能增加耗时；关闭仅代表未启用 profiler，不代表性能已验收。图表不会开启采集。</small>
+    <section class="metrics" aria-label="详细指标">
+      <div><span id="latest-draw-label">最近可见帧 · 采集 → 绘制延迟</span><strong id="latest-draw-age">—</strong><small>最后一次 canvas draw 提交采样；同一画面停留时保持不变，非屏幕物理呈现</small></div>
+      <div><span id="receive-age-label">10 秒事件窗口 · 采集 → 接收 P50 / P95</span><strong id="receive-age">—</strong><small id="latency-window">最近 10 秒 · 按接收 / 绘制事件时间</small></div>
+      <div><span id="display-age-label">10 秒事件窗口 · 采集 → 绘制 P50 / P95</span><strong id="display-age">—</strong><small>与接收相同事件窗口；每序列最多 4096 样本。包含启动阶段在窗口内的样本；绘制为 canvas draw 提交</small></div>
+      <div><span id="rpc-label">最近一次 chunk RPC</span><strong id="rpc">—</strong><small id="rpc-info">网关 HTTP 往返，不能当作 DiT 耗时</small></div>
+      <div><span>总在途帧 / 上限</span><strong id="source-lead">0 / 51</strong><small id="source-budget-status">等待会话确认预算</small><small>预算等待 <span id="source-budget-wait">0 ms / 0 次</span>；采集减绘制，涵盖服务端与传输中帧</small></div>
+      <div><span>本地输入 / 解码播放队列</span><strong id="queues">0 / 0</strong><small>本地或网络背压等待 <span id="capture-wait">0 ms / 0 次</span>；等待期间不采集</small></div>
+      <div><span>绘制丢帧 / 采集错过时隙</span><strong id="drops">0 / 0</strong><small id="drops-info">显示淘汰旧帧以限制积压</small></div>
+      <div><span>接收的编码数据量</span><strong id="media-bytes">—</strong><small id="media-rate">等待编码帧</small><small>实际码率按已接收帧的媒体时长计算，不含消息头与网络空闲。</small></div>
+    </section>
+    <section class="charts" aria-label="实时耗时与延迟曲线">
+      <div class="chart-heading"><h2>实时耗时与延迟</h2><span id="chart-state">等待会话 · 最近 10 秒</span></div>
+      <article class="chart-panel">
+        <h3>每个 chunk 的处理耗时</h3>
+        <span class="chart-hint">悬停查看邻近样本 · 点击图例切换曲线</span>
+        <div id="processing-chart" class="chart-canvas" role="img" aria-label="等待 chunk 耗时数据"></div>
+        <p id="processing-summary">等待 chunk 数据</p>
+        <small id="processing-info">按响应到达时间标点。RPC 包含 HTTP 往返；模型 render 为服务端阶段墙钟，非纯 kernel 耗时。未提供该字段时留空。</small>
+      </article>
+      <article class="chart-panel">
+        <h3>每个输出帧的延迟</h3>
+        <span class="chart-hint">原始逐帧采样 · 不平滑、不平均</span>
+        <div id="latency-chart" class="chart-canvas" role="img" aria-label="等待帧延迟数据"></div>
+        <p id="latency-summary">等待返回帧</p>
+        <small>按每帧接收或绘制发生时间标点；旧 RGB 模式同批帧共享接收时刻。横轴为会话开始后的秒数，纵轴独立缩放，单位 ms。</small>
+      </article>
+    </section>
+    <section class="charts" aria-label="逐 clip 阶段时间轴">
+      <div class="chart-heading"><h2>逐 clip 阶段时间轴</h2><span id="gantt-state">等待阶段回执 · 最近 10 秒</span></div>
+      <div class="gantt-controls">
+        <label for="gantt-source">计时来源 <select id="gantt-source"><option value="live">当前会话</option><option value="replay">历史录制回放 · 非当前会话</option></select></label>
+        <button id="gantt-pause">暂停滚动</button>
+      </div>
+      <p id="gantt-notice" class="gantt-notice">随模型输出显示已完成批次的阶段计时。</p>
+      <article class="chart-panel">
+        <h3>最近 10 秒 · 组件流水线</h3>
+        <span class="chart-hint">点击条形固定请求 · 横轴为服务端相对时间 · 完成后补入真实阶段区间</span>
+        <div id="gantt-overview" class="gantt-canvas" role="img" aria-label="等待服务端阶段计时"></div>
+        <small>颜色对应组件，条内数字为阶段墙钟耗时。包含调度与等待 worker；未展开区间不等于 GPU 空闲。短条形请悬停读取。</small>
+      </article>
+      <article class="chart-panel">
+        <div class="gantt-controls"><h3>选中 clip · 阶段放大图</h3><label for="gantt-selection">选择请求 <select id="gantt-selection" disabled></select></label></div>
+        <p id="gantt-selected">点击上方条形或选择一个请求，固定查看阶段耗时。</p>
+        <div id="gantt-detail" class="gantt-canvas" role="img" aria-label="尚未选中请求"></div>
+        <div class="gantt-table-wrap"><table class="gantt-table"><caption>选中请求的阶段墙钟，起止相对该请求首个阶段，单位 ms</caption><thead><tr><th>组件</th><th>开始</th><th>结束</th><th>耗时</th></tr></thead><tbody id="gantt-rows"></tbody></table></div>
+        <small>默认跟随最新 clip；手动选择后固定查看，选择“跟随最新 clip”恢复更新。输入 chunk、模型窗口与 RGB 输出不保证一一对应。DiT 内部各步耗时未采集。</small><div id="gantt-waits" class="gantt-table-wrap" aria-label="选中 clip 的等待回执"></div>
+      </article>
+    </section>
+    <details><summary>本次配置与计时口径</summary><pre id="configuration">等待服务配置</pre><p id="transport-info">等待读取传输模式。</p><p>Three.js 生成近似深度与语义融合 proxy。测试回显只验证链路，不能用于报告模型推理 FPS。下载记录保留目标与生效码率、编码字节、解码、逐 chunk、源帧、输入事件与绘制提交时间；浏览器与服务器时间戳分开记录。历史回放只用于图表预览，不进入当前会话指标或下载记录。</p></details>
+    </details>
+  </main>
+  <footer>invoker-render · 模型与输出尺寸由当前服务配置决定</footer>
+  <script src="./vendor/echarts-6.1.0/echarts.min.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
