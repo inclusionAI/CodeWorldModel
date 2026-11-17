@@ -1,0 +1,16 @@
+README.md
+  h_ddb8d5b3643287 21,54,107
+README.zh-CN.md
+  h_ddb8d5b3643287 21,54,107
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "0207b618c43963a5ecb8d289f3bfcb690340b5f3",
+  "prompts": {},
+  "humans": {
+    "h_ddb8d5b3643287": {
+      "author": "haimu.ll <haimu.ll@antgroup.com>"
+    }
+  }
+}
