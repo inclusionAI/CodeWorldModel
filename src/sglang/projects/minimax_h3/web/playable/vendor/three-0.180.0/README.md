@@ -1,0 +1,11 @@
+# Three.js 0.180.0
+
+Pinned upstream ES modules from the official three package.
+Source: https://github.com/mrdoob/three.js/tree/r180
+Package: https://registry.npmjs.org/three/-/three-0.180.0.tgz
+MIT license retained in LICENSE. Runtime files are served locally without a CDN.
+
+SHA-256 of the vendored files:
+
+- `three.core.min.js`: `61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de`
+- `three.module.min.js`: `e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6`

@@ -1,0 +1,23 @@
+# Pass only to ref2va_infer.py --inference-config; never merge into a training YAML.
+# These exact-computation caches do not alter sampler, steps, window or weights.
+profile: false
+resident_weights: true  # Full ~66 GB DiT replica/rank; false explicitly restores artifact/training placement.
+dit:
+  metadata: true
+  kv: true
+  adaln: true
+  delayed_hc: false
+  fuse_first_denoise: false
+  rope: false
+codec:
+  encoder: h3           # tae changes proxy conditioning; evaluate separately.
+  decoder: h3           # causal uses the separately trained StreamRender decoder.
+  backend: reference    # causal only: fast; then compile/cuda_graph may be enabled.
+  compile: false
+  cuda_graph: false
+  # decoder_weights: /path/to/causal_vit24_step6000.safetensors
+  # decoder_config: /path/to/decoder_config.json
+  # tae_weights: /path/to/taeh3_official.pth
+output:
+  async_write: true
+  queue_size: 2
