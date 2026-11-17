@@ -1,0 +1,22 @@
+README.md
+  h_ddb8d5b3643287 21,23-25,101-103,107,118,185
+README.zh-CN.md
+  h_ddb8d5b3643287 21,23-25,101-103,107,118,185
+assets/badges/arxiv.svg
+  h_ddb8d5b3643287 1,7,10-11,14-15
+assets/badges/homepage.svg
+  h_ddb8d5b3643287 1,7,11,15
+assets/badges/hugging-face.svg
+  h_ddb8d5b3643287 1,7,11,15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "51d34d8b4ced82d5291c0617d4a0985673561ad0",
+  "prompts": {},
+  "humans": {
+    "h_ddb8d5b3643287": {
+      "author": "haimu.ll <haimu.ll@antgroup.com>"
+    }
+  }
+}
