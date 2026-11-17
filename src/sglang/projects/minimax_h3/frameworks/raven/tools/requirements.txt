@@ -28,7 +28,7 @@ audio_separator==0.41.1
 onnxruntime==1.23.2
 dashscope==1.25.11
 moviepy==2.2.1
-torch==2.11.0+cu128
+torch==2.13.0
 torchvision==0.26.0+cu128
 torchaudio==2.11.0+cu128
 torchcodec==0.11.0+cu128
