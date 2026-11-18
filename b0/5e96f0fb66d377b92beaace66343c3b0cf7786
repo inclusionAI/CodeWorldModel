@@ -1,0 +1,18 @@
+THIRD_PARTY_NOTICES.md
+  h_ddb8d5b3643287 14-17
+README.md
+  h_ddb8d5b3643287 21,24,44-45,104,108,186
+README.zh-CN.md
+  h_ddb8d5b3643287 21,24,44-45,104,108,186
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "b05e96f0fb66d377b92beaace66343c3b0cf7786",
+  "prompts": {},
+  "humans": {
+    "h_ddb8d5b3643287": {
+      "author": "haimu.ll <haimu.ll@antgroup.com>"
+    }
+  }
+}
