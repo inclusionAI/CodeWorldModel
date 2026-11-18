@@ -1,0 +1,18 @@
+README.md
+  h_ddb8d5b3643287 23,43,103,106,184,187-194
+README.zh-CN.md
+  h_ddb8d5b3643287 23,43,103,106,184,187-194
+assets/badges/arxiv.svg
+  h_ddb8d5b3643287 1,7,11,15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "98946a29bd795df3c771c9b280aeebe7615e30db",
+  "prompts": {},
+  "humans": {
+    "h_ddb8d5b3643287": {
+      "author": "haimu.ll <haimu.ll@antgroup.com>"
+    }
+  }
+}
