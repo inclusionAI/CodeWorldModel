@@ -1,0 +1,41 @@
+{
+ "source": {
+  "file": "clips/live-akina.mp4",
+  "bytes": 45379464,
+  "sha256": "4e2df888e060153b991a93bd30147374ae81a0527638b10c80aeb323aeac5d94"
+ },
+ "type": "video/mp4; codecs=\"avc1.640028\"",
+ "duration": 278.625,
+ "parts": [
+  {
+   "src": "part-00.m4s",
+   "bytes": 7997765,
+   "sha256": "42f819c5a17626293290b7efb585360c70041ca83dcc727a8e2971a3d036c708"
+  },
+  {
+   "src": "part-01.m4s",
+   "bytes": 7927799,
+   "sha256": "d4c9d6b325d754636580467e9285ea80cafea1aac713af16312442fe166b845b"
+  },
+  {
+   "src": "part-02.m4s",
+   "bytes": 7774097,
+   "sha256": "b7a25af77f1c5d225bf52adc3dff892df7bfac044f0932ac0d63ff739315f7ed"
+  },
+  {
+   "src": "part-03.m4s",
+   "bytes": 7909175,
+   "sha256": "bddff44af2a331aad7d41716909f7e4b8fe3345d7879e03c27dbc023e2dc533e"
+  },
+  {
+   "src": "part-04.m4s",
+   "bytes": 7724696,
+   "sha256": "62953bdeca1452f0b2789107750cb6a45c434f517c1606547c3e6d8034aa1afe"
+  },
+  {
+   "src": "part-05.m4s",
+   "bytes": 6039122,
+   "sha256": "f82297cfa1735ca11cfe05da40defadc0c88526ef2dc0559473b3b5fdd6b3b7b"
+  }
+ ]
+}

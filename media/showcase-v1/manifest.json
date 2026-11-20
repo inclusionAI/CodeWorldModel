@@ -1,0 +1,2346 @@
+{
+ "clips": {
+  "hero-space-station": {
+   "group": "hero",
+   "src": "clips/hero-space-station.mp4",
+   "poster": "posters/hero-space-station.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 8493994,
+   "sha256": "715eb591208e50fd24fb57f26db4dee08ec53a85b7f1a077365f83bce5f36088",
+   "crf": 27,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Space station",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Space station",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "hero-mechanical-core": {
+   "group": "hero",
+   "src": "clips/hero-mechanical-core.mp4",
+   "poster": "posters/hero-mechanical-core.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 8582741,
+   "sha256": "a99027ba138f412f0091a3107d5003d8066ac46cff186356fc85400264e051de",
+   "crf": 27,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Mechanical core",
+     "style": "Depth",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Mechanical core",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "hero-sunken-city": {
+   "group": "hero",
+   "src": "clips/hero-sunken-city.mp4",
+   "poster": "posters/hero-sunken-city.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 8620448,
+   "sha256": "5f20568c2084f8458a9a3e300499d69e0994ee9c4ffea2d57307d1c9a62b30da",
+   "crf": 28,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Sunken city",
+     "style": "Semantic",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Sunken city",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "granularity-rainy-depth": {
+   "group": "granularity",
+   "src": "clips/granularity-rainy-depth.mp4",
+   "poster": "posters/granularity-rainy-depth.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1471551,
+   "sha256": "9614673dcee29d136627f02e702645b6befada5b04911d82d8c9d1fce8c7503a",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rainy chase",
+     "style": "Depth",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rainy chase",
+     "style": "Depth",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "granularity-rainy-fine": {
+   "group": "granularity",
+   "src": "clips/granularity-rainy-fine.mp4",
+   "poster": "posters/granularity-rainy-fine.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1478512,
+   "sha256": "97c17773a550600433425786529326959a15e779930c044782b1aaadaf1cf4c6",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rainy chase",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rainy chase",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-01": {
+   "group": "wall",
+   "src": "clips/wall-01.mp4",
+   "poster": "posters/wall-01.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1999973,
+   "sha256": "ff341a70f1e15ced8d7048b9f0a7ccb6edb47b812d79c0be357787a8fa1e5e1b",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Neon canyon",
+     "style": "Semantic L1",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Neon canyon",
+     "style": "Semantic L1",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-02": {
+   "group": "wall",
+   "src": "clips/wall-02.mp4",
+   "poster": "posters/wall-02.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 941822,
+   "sha256": "ed7c25aa4c07b2a8735422098613d0e21670fbf5ed292a78307320e00f3d81fb",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Cliff temple",
+     "style": "Semantic L1",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Cliff temple",
+     "style": "Semantic L1",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-03": {
+   "group": "wall",
+   "src": "clips/wall-03.mp4",
+   "poster": "posters/wall-03.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1485824,
+   "sha256": "80eb98124f279fb2436244c4bad2b16d026b59358676957a13748c7cbf677fd0",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Space station",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Space station",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-04": {
+   "group": "wall",
+   "src": "clips/wall-04.mp4",
+   "poster": "posters/wall-04.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 2526758,
+   "sha256": "d1431f8d0843f460867a43036b1286595a7fc756c1b8d4031552f38b1bf677b3",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Sunken city",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Sunken city",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-06": {
+   "group": "wall",
+   "src": "clips/wall-06.mp4",
+   "poster": "posters/wall-06.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 2724199,
+   "sha256": "c9140ea41bae8a1b624efa772474e768871a5b0d54e1127729e72f704d81ace1",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Mechanical core",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Mechanical core",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-07": {
+   "group": "wall",
+   "src": "clips/wall-07.mp4",
+   "poster": "posters/wall-07.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1312141,
+   "sha256": "808e8976f32973fe223c1c80f891813c0312c2e89ed46919182800299354d017",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Cloud city",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Cloud city",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-08": {
+   "group": "wall",
+   "src": "clips/wall-08.mp4",
+   "poster": "posters/wall-08.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1794605,
+   "sha256": "4932cd48b87e22e13bdbf8f9774312d07a8ec0484a7dd546a4acfd4fa18cb834",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Inverted city",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Inverted city",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-10": {
+   "group": "wall",
+   "src": "clips/wall-10.mp4",
+   "poster": "posters/wall-10.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 953604,
+   "sha256": "dbae2f1e553bcb222f19b13f4b498f043138d1ec0b5a09691a75287eaa57b69a",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Through the mirror",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Through the mirror",
+     "style": "Clay",
+     "route": null,
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "correspondence-cliff-temple": {
+   "group": "correspondence",
+   "src": "clips/correspondence-cliff-temple.mp4",
+   "poster": "posters/correspondence-cliff-temple.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 192,
+   "bytes": 2201125,
+   "sha256": "e8a552caddbb1114a12ac6362e13cabafa7ee79abd3cc857df32b97a9d913f8e",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Cliff temple",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Cliff temple",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "correspondence-motorcycle": {
+   "group": "correspondence",
+   "src": "clips/correspondence-motorcycle.mp4",
+   "poster": "posters/correspondence-motorcycle.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1825360,
+   "sha256": "2834c476606148ad5db40cccdb5b3515233aa1a9973ad738ee5b58aab260bf42",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Motorcycle",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Motorcycle",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-container-canyon": {
+   "group": "routes",
+   "src": "clips/promo-container-canyon.mp4",
+   "poster": "posters/promo-container-canyon.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 7590733,
+   "sha256": "666fc528e0bf3626cb33d9d0a817902f7010aae4822005f7b0602b3c67aa51a7",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Container port",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Container port",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Container port",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Container port",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-glass-tower-dive": {
+   "group": "routes",
+   "src": "clips/promo-glass-tower-dive.mp4",
+   "poster": "posters/promo-glass-tower-dive.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 9319576,
+   "sha256": "d0ff908860f5acb49b64a8155be09286d1245ba7fef973905469d492cdb305f0",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Tower dive",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Tower dive",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Tower dive",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Tower dive",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-bridge-dolly-zoom": {
+   "group": "routes",
+   "src": "clips/promo-bridge-dolly-zoom.mp4",
+   "poster": "posters/promo-bridge-dolly-zoom.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 192,
+   "bytes": 3623777,
+   "sha256": "648ebf4926179c0d4098ec7038f12da245b91448b5364a52430a694ac3b2cf89",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Dolly zoom",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Dolly zoom",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Dolly zoom",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Dolly zoom",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-coastal-tunnel-chase": {
+   "group": "routes",
+   "src": "clips/promo-coastal-tunnel-chase.mp4",
+   "poster": "posters/promo-coastal-tunnel-chase.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 8982807,
+   "sha256": "3280ab5c437fe8730eb4237eb0a16c03fd933139be4ef08af1fe124939d2e600",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Tunnel chase",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Tunnel chase",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Tunnel chase",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Tunnel chase",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-intersection": {
+   "group": "routes",
+   "src": "clips/promo-intersection.mp4",
+   "poster": "posters/promo-intersection.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 9932163,
+   "sha256": "909f86b7fb08676171a5963392d3b16b905459c0389ef8cb02932a3abbfe0423",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Intersection",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Intersection",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Intersection",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Intersection",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-rocket-launch": {
+   "group": "routes",
+   "src": "clips/promo-rocket-launch.mp4",
+   "poster": "posters/promo-rocket-launch.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 4361684,
+   "sha256": "7da5506b24db81f332b75f6606b7b833a7840f355b359ca7e3c4f12086d5607a",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rocket launch",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Rocket launch",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rocket launch",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rocket launch",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-villa-walkthrough": {
+   "group": "routes",
+   "src": "clips/promo-villa-walkthrough.mp4",
+   "poster": "posters/promo-villa-walkthrough.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 5638932,
+   "sha256": "608279e9c524199c1fa0236acb564dd6096d97cfe30a85c1238c6b2adb2f3d0c",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Villa",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Villa",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Villa",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Villa",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "promo-grand-prix": {
+   "group": "routes",
+   "src": "clips/promo-grand-prix.mp4",
+   "poster": "posters/promo-grand-prix.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 9283785,
+   "sha256": "030c10d285352163e735652fe9e7c016f6c27ef1c4a918a5869fc8444a327046",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Grand prix",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Grand prix",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Grand prix",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Grand prix",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "granularity-rainy-subject_bg": {
+   "group": "granularity",
+   "src": "clips/granularity-rainy-subject_bg.mp4",
+   "poster": "posters/granularity-rainy-subject_bg.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1487635,
+   "sha256": "10264a3de4f791300675dcca6498b5c729960bd79547c615033f4c2470d2ab8e",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rainy chase",
+     "style": "Subject / background",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rainy chase",
+     "style": "Subject / background",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "granularity-rainy-wire": {
+   "group": "granularity",
+   "src": "clips/granularity-rainy-wire.mp4",
+   "poster": "posters/granularity-rainy-wire.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1857880,
+   "sha256": "f89044b441ef3007c6320a56a811f16ef4b75f4594a58480c77140731b357ba7",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rainy chase",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rainy chase",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "correspondence-neon-car": {
+   "group": "correspondence",
+   "src": "clips/correspondence-neon-car.mp4",
+   "poster": "posters/correspondence-neon-car.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1955605,
+   "sha256": "369793d15eaebcbfd52509df50406aaac0823e942d7e0effc23520197d239e3d",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Neon car",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Neon car",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-v2-neon-car": {
+   "group": "wall",
+   "src": "clips/wall-v2-neon-car.mp4",
+   "poster": "posters/wall-v2-neon-car.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1955605,
+   "sha256": "369793d15eaebcbfd52509df50406aaac0823e942d7e0effc23520197d239e3d",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Neon car",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Neon car",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-v2-cliff-hero": {
+   "group": "wall",
+   "src": "clips/wall-v2-cliff-hero.mp4",
+   "poster": "posters/wall-v2-cliff-hero.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 2033367,
+   "sha256": "9da5752d24e0e6084a77202a5329f64e340f59cdaff2ec306d1026e26e4ad77a",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Cliff hero",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Cliff hero",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-v2-rainy-chase": {
+   "group": "wall",
+   "src": "clips/wall-v2-rainy-chase.mp4",
+   "poster": "posters/wall-v2-rainy-chase.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1328916,
+   "sha256": "1159ee6d3b8890d229fdc9223f495a4ae4c316676bb4ce69af42f6e499c081e9",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rainy chase",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rainy chase",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-v2-machine-hall": {
+   "group": "wall",
+   "src": "clips/wall-v2-machine-hall.mp4",
+   "poster": "posters/wall-v2-machine-hall.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 2236642,
+   "sha256": "4df623aca1f85232d607d28764193b889ec10dc216e8ee100b3a5fee2463f6eb",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Machine hall",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Machine hall",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-v2-crystal-stage": {
+   "group": "wall",
+   "src": "clips/wall-v2-crystal-stage.mp4",
+   "poster": "posters/wall-v2-crystal-stage.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1081115,
+   "sha256": "21b6de92e55672d02723702cdd0fb657ab6f41f1e1824c092046c9827b931ed1",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Crystal stage",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Crystal stage",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-v2-motorcycle": {
+   "group": "wall",
+   "src": "clips/wall-v2-motorcycle.mp4",
+   "poster": "posters/wall-v2-motorcycle.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 144,
+   "bytes": 1798080,
+   "sha256": "a6df24f20138736d0cb09bbffbf46644bbe1085455087d63c316ea73ed2dfbb5",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Motorcycle",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Motorcycle",
+     "style": "Fine",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-container-canyon": {
+   "group": "wall",
+   "src": "clips/wall-promo-container-canyon.mp4",
+   "poster": "posters/wall-promo-container-canyon.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 4070247,
+   "sha256": "8de94c32de64a91eab2aedfdc70037ce87a3ea2f0ec2693c118ac92de442df45",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Container port",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Container port",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-glass-tower-dive": {
+   "group": "wall",
+   "src": "clips/wall-promo-glass-tower-dive.mp4",
+   "poster": "posters/wall-promo-glass-tower-dive.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 4530968,
+   "sha256": "0d2db4663823fe018eea7cffdfff9fb4bc3d9fad91f584cca69ce309f607fd31",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Tower dive",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Tower dive",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-bridge-dolly-zoom": {
+   "group": "wall",
+   "src": "clips/wall-promo-bridge-dolly-zoom.mp4",
+   "poster": "posters/wall-promo-bridge-dolly-zoom.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 192,
+   "bytes": 2018526,
+   "sha256": "0b469067b72c9b4a6a816e6e458aa0e6dd024cdf6f7f38e771c8805a50ebe3c3",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Dolly zoom",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Dolly zoom",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-coastal-tunnel-chase": {
+   "group": "wall",
+   "src": "clips/wall-promo-coastal-tunnel-chase.mp4",
+   "poster": "posters/wall-promo-coastal-tunnel-chase.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 3689571,
+   "sha256": "34f91e0e9827dab5454ee3123b847e99fc3413b44bf3c0b72530025851569ab4",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Tunnel chase",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Tunnel chase",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-intersection": {
+   "group": "wall",
+   "src": "clips/wall-promo-intersection.mp4",
+   "poster": "posters/wall-promo-intersection.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 4983134,
+   "sha256": "4ff93a7e6f355496fd544db6ffdd8849e7ef02031423deaf01823cdbc56cf932",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Intersection",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Intersection",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-rocket-launch": {
+   "group": "wall",
+   "src": "clips/wall-promo-rocket-launch.mp4",
+   "poster": "posters/wall-promo-rocket-launch.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 1801325,
+   "sha256": "397484a3f74405624cd3f660eb81ca625bd22ded9380f96496a5a911241c20d0",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rocket launch",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rocket launch",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-villa-walkthrough": {
+   "group": "wall",
+   "src": "clips/wall-promo-villa-walkthrough.mp4",
+   "poster": "posters/wall-promo-villa-walkthrough.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 2326562,
+   "sha256": "f31cedec2e49afcdf015ef2b02075132a21b35653b1311f519a2520c7722c2dc",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Villa",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Villa",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "wall-promo-grand-prix": {
+   "group": "wall",
+   "src": "clips/wall-promo-grand-prix.mp4",
+   "poster": "posters/wall-promo-grand-prix.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 4834973,
+   "sha256": "1ec20cb7960a71e48b7fc77f68eb4693255a09020a922e1fbf00401593077eca",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Grand prix",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Grand prix",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "dynamics-bascule-bridge": {
+   "group": "routes",
+   "src": "clips/dynamics-bascule-bridge.mp4",
+   "poster": "posters/dynamics-bascule-bridge.jpg",
+   "size": [
+    1792,
+    1024
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 9129931,
+   "sha256": "60d1e933e7109554b8ebb718ed8ade153de40d27c271bbc5867ccfb5bd45cfd0",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Bascule bridge",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "proxy",
+     "scene": "Bascule bridge",
+     "style": "Wire",
+     "route": "b",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Bascule bridge",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      0,
+      512,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Bascule bridge",
+     "style": "Wire",
+     "route": "b",
+     "rect": [
+      896,
+      512,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "correspondence-sunken-city": {
+   "group": "correspondence",
+   "src": "clips/correspondence-sunken-city.mp4",
+   "poster": "posters/correspondence-sunken-city.jpg",
+   "size": [
+    1792,
+    512
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 4924540,
+   "sha256": "4bfc78f7fedf3cf2c126fb5d7b022a576fd1d903166bb3955e27a89b9f993c3d",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Sunken city",
+     "style": "Semantic",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      896,
+      512
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Sunken city",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      896,
+      0,
+      896,
+      512
+     ]
+    }
+   ]
+  },
+  "hero-neon-canyon": {
+   "group": "hero",
+   "src": "clips/hero-neon-canyon.mp4",
+   "poster": "posters/hero-neon-canyon.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 9262645,
+   "sha256": "5b4dd10e59907a9a7d522dd4ae6346f855b83ea9764d4be5e4a353f48ca94033",
+   "crf": 30,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Neon canyon",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Neon canyon",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "hero-cliff-temple": {
+   "group": "hero",
+   "src": "clips/hero-cliff-temple.mp4",
+   "poster": "posters/hero-cliff-temple.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 192,
+   "bytes": 7223137,
+   "sha256": "b1d1886f887b295517a64b332b50bd7bf3dd47242553d866e1dfc7a9bfdffb40",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Cliff temple",
+     "style": "Clay",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Cliff temple",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "hero-rocket-launch": {
+   "group": "hero",
+   "src": "clips/hero-rocket-launch.mp4",
+   "poster": "posters/hero-rocket-launch.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 5656808,
+   "sha256": "3833f47d6e2238de925cba484a6898e129b4dfd2e1974a7e29b23699500ef614",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Rocket launch",
+     "style": "Clay",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Rocket launch",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "hero-tunnel-chase": {
+   "group": "hero",
+   "src": "clips/hero-tunnel-chase.mp4",
+   "poster": "posters/hero-tunnel-chase.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 288,
+   "bytes": 8347304,
+   "sha256": "51592238b72eb77ba5ea5ff6244ef83e908bbe88612449b1f69e859c1fbec1d2",
+   "crf": 27,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Tunnel chase",
+     "style": "Fine",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Tunnel chase",
+     "style": "Wire",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "hero-grand-prix": {
+   "group": "hero",
+   "src": "clips/hero-grand-prix.mp4",
+   "poster": "posters/hero-grand-prix.jpg",
+   "size": [
+    3780,
+    1080
+   ],
+   "fps": 24,
+   "frames": 240,
+   "bytes": 9422210,
+   "sha256": "58ac3f039f49ef627718dfc976f7952e0ac3aa324f75e6ff3612a2a3033ebead",
+   "crf": 29,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Grand prix",
+     "style": "Semantic",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1890,
+      1080
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Grand prix",
+     "style": "Subject / background",
+     "route": "a",
+     "rect": [
+      1890,
+      0,
+      1890,
+      1080
+     ]
+    }
+   ]
+  },
+  "games-coast-getaway": {
+   "group": "games",
+   "src": "clips/games-coast-getaway.mp4",
+   "poster": "posters/games-coast-getaway.jpg",
+   "size": [
+    2688,
+    768
+   ],
+   "fps": 24,
+   "frames": 312,
+   "bytes": 9285725,
+   "sha256": "80f980f6e27d150e4bf10572643875d380e4b713b7b9a0f4036a240aead9bcf6",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Coast getaway",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1344,
+      768
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Coast getaway",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      1344,
+      0,
+      1344,
+      768
+     ]
+    }
+   ]
+  },
+  "games-airdrop-racer": {
+   "group": "games",
+   "src": "clips/games-airdrop-racer.mp4",
+   "poster": "posters/games-airdrop-racer.jpg",
+   "size": [
+    2688,
+    768
+   ],
+   "fps": 24,
+   "frames": 312,
+   "bytes": 7917886,
+   "sha256": "c278d3f9e6abaea6c6f130314fbab8d05565c3ba101e56c0464146b0fd1bc1fc",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Airdrop racer",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      1344,
+      768
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Airdrop racer",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      1344,
+      0,
+      1344,
+      768
+     ]
+    }
+   ]
+  },
+  "games-canyon-flight": {
+   "group": "games",
+   "src": "clips/games-canyon-flight.mp4",
+   "poster": "posters/games-canyon-flight.jpg",
+   "size": [
+    2688,
+    768
+   ],
+   "fps": 24,
+   "frames": 312,
+   "bytes": 8431302,
+   "sha256": "8865bb3195d5c874dc9ac6d3b691d62b08961d1cfb941b5c5b844b633423ef53",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Canyon flight",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1344,
+      768
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Canyon flight",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      1344,
+      0,
+      1344,
+      768
+     ]
+    }
+   ]
+  },
+  "games-gravity-flip": {
+   "group": "games",
+   "src": "clips/games-gravity-flip.mp4",
+   "poster": "posters/games-gravity-flip.jpg",
+   "size": [
+    2688,
+    768
+   ],
+   "fps": 24,
+   "frames": 312,
+   "bytes": 8553544,
+   "sha256": "a7be630719eadebf8b364a5c1f988dfc100ae418b9586ef46833704a484a9518",
+   "crf": 25,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Gravity flip",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      0,
+      0,
+      1344,
+      768
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Gravity flip",
+     "style": "Training proxy",
+     "route": "b",
+     "rect": [
+      1344,
+      0,
+      1344,
+      768
+     ]
+    }
+   ]
+  },
+  "games-shopfront-shatter": {
+   "group": "games",
+   "src": "clips/games-shopfront-shatter.mp4",
+   "poster": "posters/games-shopfront-shatter.jpg",
+   "size": [
+    2688,
+    768
+   ],
+   "fps": 24,
+   "frames": 270,
+   "bytes": 8238271,
+   "sha256": "23d41754bb53a473c5d5f5d285698d27de094958dd12977feb4a92ccfc69b9ad",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "Shopfront shatter",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1344,
+      768
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "Shopfront shatter",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      1344,
+      0,
+      1344,
+      768
+     ]
+    }
+   ]
+  },
+  "games-city-fold": {
+   "group": "games",
+   "src": "clips/games-city-fold.mp4",
+   "poster": "posters/games-city-fold.jpg",
+   "size": [
+    2688,
+    768
+   ],
+   "fps": 24,
+   "frames": 234,
+   "bytes": 6273910,
+   "sha256": "c4023ae2580d51ea512d174456f3475365b887da9e6001408edc447a45b82632",
+   "crf": 24,
+   "tiles": [
+    {
+     "stream": "proxy",
+     "scene": "City fold",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      0,
+      0,
+      1344,
+      768
+     ]
+    },
+    {
+     "stream": "sft",
+     "scene": "City fold",
+     "style": "Training proxy",
+     "route": "a",
+     "rect": [
+      1344,
+      0,
+      1344,
+      768
+     ]
+    }
+   ]
+  }
+ },
+ "schema": "showcase/1",
+ "streams": {
+  "proxy": "Proxy",
+  "base": "Base model",
+  "sft": "Output"
+ }
+}
