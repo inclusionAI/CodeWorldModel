@@ -1,0 +1,18 @@
+README.md
+  h_ddb8d5b3643287 123
+README.zh-CN.md
+  h_ddb8d5b3643287 123
+docs/INFERENCE.md
+  h_ddb8d5b3643287 51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "eeca41e201b90f707fb351a24d4f356099ce37a7",
+  "prompts": {},
+  "humans": {
+    "h_ddb8d5b3643287": {
+      "author": "haimu.ll <haimu.ll@antgroup.com>"
+    }
+  }
+}
