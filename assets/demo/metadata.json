@@ -1,0 +1,56 @@
+{
+  "long_horizon_30min": {
+    "file": "long-horizon-30min.gif",
+    "dimensions": [640, 366],
+    "frames": 72,
+    "playback_fps": 6,
+    "source": "six 2-second excerpts of one continuous 30-minute generation with the input proxy inset at the upper left; the source video is not stored in this repository",
+    "source_dimensions": [1344, 768],
+    "source_fps": 24,
+    "source_duration_seconds": 1800,
+    "source_excerpt_start_seconds": [2, 360, 720, 1080, 1440, 1796],
+    "note": "The timestamp at the lower right was added to the preview and gives the position inside the 30-minute take. Playback FPS is not generation throughput."
+  },
+  "interactive_driving": {
+    "file": "interactive-driving.gif",
+    "dimensions": [640, 360],
+    "frames": 75,
+    "playback_fps": 6,
+    "source": "five 2.5-second excerpts of a gamepad-driven session: rendered stream, proxy inset at the lower left, gamepad footage inset at the lower right; the source video is not stored in this repository",
+    "source_dimensions": [1920, 1080],
+    "source_fps": 24,
+    "source_duration_seconds": 278.6,
+    "source_excerpt_start_seconds": [20, 75, 130, 190, 245],
+    "note": "Playback FPS is not generation throughput."
+  },
+  "camera_coastal_tunnel": {
+    "file": "camera-coastal-tunnel.gif",
+    "dimensions": [800, 228],
+    "frames": 72,
+    "playback_fps": 6,
+    "source": "full 12-second side-by-side clip, camera route A on the left and route B on the right, each with its proxy inset; the source video is not stored in this repository",
+    "source_dimensions": [2696, 768],
+    "source_fps": 24,
+    "source_duration_seconds": 12
+  },
+  "camera_rocket_launch": {
+    "file": "camera-rocket-launch.gif",
+    "dimensions": [800, 228],
+    "frames": 60,
+    "playback_fps": 6,
+    "source": "full 10-second side-by-side clip, camera route A on the left and route B on the right, each with its proxy inset; the source video is not stored in this repository",
+    "source_dimensions": [2696, 768],
+    "source_fps": 24,
+    "source_duration_seconds": 10
+  },
+  "camera_grand_prix": {
+    "file": "camera-grand-prix.gif",
+    "dimensions": [800, 228],
+    "frames": 60,
+    "playback_fps": 6,
+    "source": "full 10-second side-by-side clip, camera route A on the left and route B on the right, each with its proxy inset; the source video is not stored in this repository",
+    "source_dimensions": [2696, 768],
+    "source_fps": 24,
+    "source_duration_seconds": 10
+  }
+}

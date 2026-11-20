@@ -1,0 +1,45 @@
+{
+  "conditioning_mode": "static_image_qwen_proxy_vae_v1",
+  "rope_reference_latents": 37,
+  "diffusion": {
+    "schedule": {
+      "module": "common.diffusion.schedule.lerp",
+      "class_name": "LinearInterpolationSchedule",
+      "args": {
+        "T": 1.0,
+        "pred_type": "x_0"
+      }
+    },
+    "sampling_timesteps": {
+      "module": "common.diffusion.timestep.sampling.trailing",
+      "class_name": "TrailingSamplingTimesteps",
+      "args": {
+        "T": 1.0,
+        "num_sampling_steps": 4,
+        "shift": 12.0
+      }
+    },
+    "sampler": {
+      "module": "projects.minimax_h3.modeling.sampling",
+      "class_name": "EulerSampler",
+      "args": {}
+    }
+  },
+  "guidance": {
+    "mode": "plain",
+    "drop": "proxy",
+    "scale": 1.0
+  },
+  "protocol": "ref_fixed_recent_history/v2",
+  "sink_latents": 1,
+  "recent_latents": 12,
+  "bootstrap_latents": 9,
+  "current_latent_schedule": [
+    5
+  ],
+  "segment_boundaries": [
+    45,
+    70
+  ],
+  "position_policy": "absolute_native_v1"
+}

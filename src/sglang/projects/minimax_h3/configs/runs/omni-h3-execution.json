@@ -1,0 +1,10 @@
+{
+  "num_gpus": 8,
+  "tp_size": 2,
+  "sp_degree": 4,
+  "ulysses_degree": 4,
+  "ring_degree": 1,
+  "encoder_parallel": "auto",
+  "attention_backend": "fa",
+  "minimax_h3_adaln_online": false
+}
